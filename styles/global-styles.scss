@@ -1,0 +1,36 @@
+.paragrafo {
+  text-align: center;
+  font-size: 20px;
+}
+
+.header-menu {
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
+}
+
+nav {
+  margin: 25px;
+  background: #f9f9f9;
+  padding: 16px;
+  .menuItems {
+    list-style: none;
+    display: flex;
+    li {
+      margin: 50px;
+      a {
+        text-decoration: none;
+        color: #8f8f8f;
+        font-size: 24px;
+        font-weight: 400;
+        position: relative;
+        &:hover {
+          &::before {
+            width: 100%;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
